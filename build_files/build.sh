@@ -18,6 +18,8 @@ dnf5 install -y tmux
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+dnf5 install -y gtk-murrine-engine
+dnf5 install -y gnome-tweaks
 dnf5 -y copr enable avengemedia/dms
 dnf5 install -y niri dms
 # systemctl --user add-wants niri.service dms
